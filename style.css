@@ -57,3 +57,48 @@
 }
 
 /*name container*/
+.name-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#input-name, #input-lastname{
+    flex: 1;
+}
+
+/*email house container*/
+.email-house-container{
+    display: flex;
+    gap: 10p;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#input-email, #house{
+    flex: 1;
+}
+
+/*family options*/
+.family-options{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+/*content checkboxes*/
+.content-checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+/*rate options*/
+.rate-options{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
