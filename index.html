@@ -27,7 +27,7 @@
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
             </div>
 
-            <div class="emai-house-container">
+            <div class="email-house-container">
                 <input type="email" id="input-email" placeholder="Email">
                 <select name="" id="house">
                     <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -45,7 +45,7 @@
                 <label><input type="radio" name="family" value="FullStack"> FullStack</label>
             </div>
 
-            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
 
                 <div class="content-checkboxes">
                     <label><input type="checkbox" class="subject" value="HoFs"> HoFs</label>
@@ -53,7 +53,7 @@
                     <label><input type="checkbox" class="subject" value="Promises"> Promises</label>
                     <label><input type="checkbox" class="subject" value="React"> React</label>
                     <label><input type="checkbox" class="subject" value="SQL"> SQL</label>
-                    <label><input type="checkbox" class="subject" value="Python"> Python</label>
+                    <label><input type="checkbox" class="subject" value="Python"> Python
                 </div>
 
                 <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
@@ -71,12 +71,13 @@
                     <label><input type="radio" name="rate" value="10"> 10</label>
                 </div>
 
-                <label for="" class="textarea">Deixe seu comentário
-                    <textarea name="" id="" maxlength="500"></textarea>
-                </label>
-                <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-                <input type="checkbox" id="agreement">
-                <button type="submit" id="submit-btn">Enviar</button>
+                <label for="" class="textarea">Deixe seu comentário</label>
+                <textarea maxlength="500"></textarea>
+                
+                <label for="" id="label-infos">
+                    <input type="checkbox" id="agreement">Você concorda com o uso das informações acima?</label>
+                
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
         </form>
         <img src="images/trybewarts-colored.svg" alt="trybewarts-colored" id="trybewarts-forms-logo">
     </main>

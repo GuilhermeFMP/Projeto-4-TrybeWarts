@@ -1,3 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
 /*header*/
 .header{
     background-color: rgb(50, 167, 145);
@@ -13,7 +20,7 @@
 
 #trybewarts-header-title{
     color: white;
-    font-size: 24px;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -24,34 +31,59 @@
 
 .trybewarts-login input{
     padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.trybewarts-login button{
+.trybewarts-login input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+
+#login-btn{
     padding: 5px 10px;
     background-color: white;
     color: rgb(50, 167, 145);
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+#login-btn:hover {
+  background-color: #dbf3ed;
+  transform: scale(1.03);
 }
 
 /*main container*/
 #main-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 40px;
 }
 
 #evaluation-form{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     width: 675px;
-    gap: 10px;
+    gap: 16px;
 }
 
 #trybewarts-forms-logo{
     height: 500px;
+    max-width: 100%;
+    object-fit: contain;
     align-self: center;
     margin-left: 20px;
 }
@@ -61,21 +93,30 @@
     display: flex;
     gap: 10px;
     width: 100%;
+    margin-top: 10px;
 }
 
 #input-name, #input-lastname{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fefefe;
     flex: 1;
 }
 
 /*email house container*/
 .email-house-container{
     display: flex;
-    gap: 10p;
+    gap: 10px;
     width: 100%;
     margin-top: 10px;
 }
 
 #input-email, #house{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fefefe;
     flex: 1;
 }
 
@@ -101,4 +142,57 @@
     gap: 8px;
     margin-top: 10px;
     flex-wrap: wrap;
+}
+
+/*textarea*/
+.textarea{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#label-infos{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+/*btn*/
+#submit-btn{
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit-btn:hover{
+    background-color: #004c99;
+    transform: scale(1.02);
+}
+
+/*footer*/
+footer{
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
 }
